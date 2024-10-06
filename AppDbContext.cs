@@ -8,7 +8,7 @@ public class AppDbContext : DbContext
     public AppDbContext() { }
     public AppDbContext(DbContextOptions options) : base(options) { }
 
-    public DbSet<BeefWellington> BeefWellingtons => Set<BeefWellington>();
+    public DbSet<Event> Events => Set<Event>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
